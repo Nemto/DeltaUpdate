@@ -88,10 +88,9 @@
             this.rb_singleGroup.Name = "rb_singleGroup";
             this.rb_singleGroup.Size = new System.Drawing.Size(152, 17);
             this.rb_singleGroup.TabIndex = 4;
-            this.rb_singleGroup.TabStop = true;
             this.rb_singleGroup.Text = "En gruppetype pr. subzone";
             this.rb_singleGroup.UseVisualStyleBackColor = true;
-            this.rb_singleGroup.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.rb_singleGroup.CheckedChanged += new System.EventHandler(this.rb_singleGroup_CheckedChanged);
             // 
             // rb_mulipleGroup
             // 
@@ -100,9 +99,9 @@
             this.rb_mulipleGroup.Name = "rb_mulipleGroup";
             this.rb_mulipleGroup.Size = new System.Drawing.Size(165, 17);
             this.rb_mulipleGroup.TabIndex = 5;
-            this.rb_mulipleGroup.TabStop = true;
             this.rb_mulipleGroup.Text = "Flere gruppetyper pr. subzone";
             this.rb_mulipleGroup.UseVisualStyleBackColor = true;
+            this.rb_mulipleGroup.CheckedChanged += new System.EventHandler(this.rb_mulipleGroup_CheckedChanged);
             // 
             // tableLayoutPanel1
             // 
@@ -123,15 +122,16 @@
             // cb_loopSounder
             // 
             this.cb_loopSounder.AutoSize = true;
+            this.cb_loopSounder.Enabled = false;
             this.cb_loopSounder.Location = new System.Drawing.Point(3, 53);
             this.cb_loopSounder.Name = "cb_loopSounder";
             this.cb_loopSounder.Size = new System.Drawing.Size(140, 15);
             this.cb_loopSounder.TabIndex = 6;
             this.cb_loopSounder.Text = "Sløyfedrevet alarmorgan";
             this.cb_loopSounder.UseVisualStyleBackColor = true;
-            this.cb_loopSounder.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.cb_loopSounder.CheckedChanged += new System.EventHandler(this.cb_loopSounder_CheckedChanged);
             // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -140,7 +140,7 @@
             this.Controls.Add(this.gb_action);
             this.Controls.Add(this.gb_software);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.Text = "Delta Update?";
             this.gb_software.ResumeLayout(false);
             this.gb_software.PerformLayout();
